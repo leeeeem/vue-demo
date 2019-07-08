@@ -1,6 +1,6 @@
 # vue-demo
 
-> online demo
+> an vue tooltips component demo
 
 ## Build Setup
 

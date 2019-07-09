@@ -1,21 +1,21 @@
 <template>
   <div class="offset">
-    <Tooltips placement="top" content="Top Offset Content" :offset="20">
+    <Tooltips placement="top" content="Top Offset Content" :offset="[-122,-111]">
       <div class="tooltips-content">
         在Top中的位移
       </div>
     </Tooltips>
-    <Tooltips placement="bottom" content="Bottom Offset Content" :offset="20">
+    <Tooltips placement="bottom" content="Bottom Offset Content" :offset="[-122,-111]">
       <div class="tooltips-content">
         在Bottom中的位移
       </div>
     </Tooltips>
-    <Tooltips placement="right" content="Right Offset Content" :offset="20">
+    <Tooltips placement="right" content="Right Offset Content" :offset="[-122,-111]">
       <div class="tooltips-content">
         在Right中的位移
       </div>
     </Tooltips>
-    <Tooltips placement="left" content="Left Offset Content" :offset="20">
+    <Tooltips placement="left" content="Left Offset Content" :offset="[-122,-111]">
       <div class="tooltips-content">
         在Left中的位移
       </div>

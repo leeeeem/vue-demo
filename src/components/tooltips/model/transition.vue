@@ -1,5 +1,5 @@
 <template>
-  <div class="delay">
+  <div class="transition">
 
     <div class="show-delay">
       <Tooltips placement="top" content="abc" :duration="0.2" transition-function="ease-in">
@@ -23,10 +23,10 @@
 </template>
 
 <script>
-  import Tooltips from '../src/index'
+  import Tooltips from "v-component-tooltips";
 
   export default {
-    name: 'Delay',
+    name: 'Transition',
 
     components: {
       Tooltips
@@ -38,7 +38,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .show-delay {
+  .transition {
     width: 800px;
     height: 100px;
     display: flex;

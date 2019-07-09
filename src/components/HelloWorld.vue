@@ -1,14 +1,11 @@
 <template>
   <div class="hello">
-    <!-- <tooltips content="content">
-      123123
-    </tooltips> -->
     <Position></Position>
     <Arrow></Arrow>
     <Delay></Delay>
-    <!-- <Transition></Transition> -->
+    <Transition></Transition>
     <Disabled></Disabled>
-    <!-- <Offset></Offset> -->
+    <Offset></Offset>
   </div>
 </template>
 
@@ -18,19 +15,19 @@
   import Arrow from "./tooltips/model/arrow";
   import Delay from "./tooltips/model/delay";
   import Disabled from "./tooltips/model/disabled";
-  // import Offset from "./tooltips/model/offset";
-  // import Transition from "./tooltips/model/transition";
+  import Offset from "./tooltips/model/offset";
+  import Transition from "./tooltips/model/transition";
 
   export default {
     name: 'HelloWorld',
     components: {
       Tooltips,
-      // Offset,
+      Offset,
       Disabled,
       Delay,
       Arrow,
       Position,
-      // Transition
+      Transition
     },
     data() {
       return {
@@ -40,7 +37,6 @@
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .hello {
   display: flex;
@@ -49,21 +45,4 @@
     align-items: flex-start;
     padding-left: 150px;
 }
-  h1, h2 {
-    font-weight: normal;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
-  }
 </style>

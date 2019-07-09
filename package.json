@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "node-sass": "^4.12.0",
     "v-component-tooltips": "^1.0.1",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.0",

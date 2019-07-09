@@ -1,41 +1,69 @@
 <template>
   <div class="hello">
-    <tooltips content="content">
+    <!-- <tooltips content="content">
       123123
-    </tooltips>
-
+    </tooltips> -->
+    <Position></Position>
+    <Arrow></Arrow>
+    <Delay></Delay>
+    <!-- <Transition></Transition> -->
+    <Disabled></Disabled>
+    <!-- <Offset></Offset> -->
   </div>
 </template>
 
 <script>
-import Tooltips from "v-component-tooltips";
-export default {
-  name: 'HelloWorld',
-  components: {
-    Tooltips,
-  },
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  import Tooltips from "v-component-tooltips";
+  import Position from "./tooltips/model/position"
+  import Arrow from "./tooltips/model/arrow";
+  import Delay from "./tooltips/model/delay";
+  import Disabled from "./tooltips/model/disabled";
+  // import Offset from "./tooltips/model/offset";
+  // import Transition from "./tooltips/model/transition";
+
+  export default {
+    name: 'HelloWorld',
+    components: {
+      Tooltips,
+      // Offset,
+      Disabled,
+      Delay,
+      Arrow,
+      Position,
+      // Transition
+    },
+    data() {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
+<style lang="scss" scoped>
+.hello {
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 150px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  h1, h2 {
+    font-weight: normal;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    color: #42b983;
+  }
 </style>
